@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/breaking_newsfrag"
+        android:icon="@drawable/breakingnews"
+        android:title="Breaking News" />
+
+    <item
+        android:id="@+id/saved_newsfrag"
+        android:icon="@drawable/savednews"
+        android:title="Saved Articles" />
+    <item
+        android:id="@+id/search_newsfrag"
+        android:icon="@drawable/allnews"
+        android:title="Search" />
+
+</menu>

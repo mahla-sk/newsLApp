@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/breaking_newsfrag">
+
+    <fragment
+        android:id="@+id/breaking_newsfrag"
+        android:name="com.example.newslapp.ui.Breaking.BreakingFragment"
+        android:label="breaking"
+        >
+
+        <action
+            android:id="@+id/action_breaking_newsfrag_to_all_newsfrag"
+            app:destination="@id/all_newsfrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/saved_newsfrag"
+        android:name="com.example.newslapp.ui.Saved.SavedFragment"
+        android:label="saved"
+         >
+        <action
+            android:id="@+id/action_saved_newsfrag_to_all_newsfrag"
+            app:destination="@id/all_newsfrag" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/search_newsfrag"
+        android:name="com.example.newslapp.ui.search.SearchFragment"
+        android:label="search"
+         >
+        <action
+            android:id="@+id/action_search_newsfrag_to_all_newsfrag"
+            app:destination="@id/all_newsfrag" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/all_newsfrag"
+        android:name="com.example.newslapp.ui.All.AllFragment"
+        android:label="all"
+
+    >
+        <argument
+            android:name="article_data"
+            app:argType="com.example.newslapp.Api.Article" />
+    </fragment>
+</navigation>
